@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Facts</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+  
+      <div class="jumbotron text-center">
+        <h1>MARS FACTS</h1>
+        <!-- <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Find a phone!</a></p> -->
+      </div>
+  
+      <!-- Redplanet info -->
+      <div class="row" id="redplanet">
+        <div class="col-md-12">
+          <h4 class="heading">{{ redplanet.title }}</h4>
+          <small>{{redplanet.parag}}</small>
+        </div>
+      </div>
+      <div class="row" id="feat_img">
+        <div class="col-md-6">
+            <h3>Today's featured image</h3>
+            <img src={{ feat_image.img_url }}>   
+        </div>
+        <div class="col-md-8">
+            <h3>MARS PLANET PROFILE</h3>
+            {{ facts|safe }}  
+        </div>
+      </div>
+      <div class="row" id="hemi_photos">
+        <div class="col-md-3" id="big-photo">
+            <img src={{ hemi_zero.im_url }} style="width: 200px;height: 200px;">
+            
+        </div>
+        <div class="col-md-3" id="big-photo">
+            <img src={{ hemi_one.im_url }} style="width: 200px;height: 200px;">
+        </div>
+        <div class="col-md-3" id="big-photo">
+            <img src={{ hemi_two.im_url }} style="width: 200px;height: 200px;">
+        </div>
+        <div class="col-md-3" id="big-photo">
+            <img src={{ hemi_three.im_url }} style="width: 200px;height: 200px;">
+        </div>
+      </div>
+      
+      
+  
+    </div>
+  </body>
+  
+  </html> 
