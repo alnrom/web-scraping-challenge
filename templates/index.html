@@ -25,17 +25,51 @@
           <small>{{redplanet.parag}}</small>
         </div>
       </div>
+      
       <div class="row" id="feat_img">
         <div class="col-md-6">
             <h3>Today's featured image</h3>
             <img src={{ feat_image.img_url }}>   
         </div>
-        <div class="col-md-8">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
             <h3>MARS PLANET PROFILE</h3>
+            <table class="table table-striped table-dark table-hover">
             {{ facts|safe }}  
+          </table>
         </div>
       </div>
-      <div class="row" id="hemi_photos">
+
+      <h4>Mars' Hemispheres</h4>
+      <div class="card-deck">
+      <div class="col-md-3 card">
+        <img src={{ hemi_zero.im_url }} class="card-img-top" alt="Cerberus" style="width: 200px;height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">Cerberus</h5>
+        </div>
+      </div>
+      <div class="col-md-3 card">
+        <img src={{ hemi_one.im_url }} class="card-img-top" alt="Schiaparelli" style="width: 200px;height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">Schiaparelli</h5>
+        </div>
+      </div>
+      <div class="col-md-3 card">
+        <img src={{ hemi_two.im_url }} class="card-img-top" alt="Syrtis" style="width: 200px;height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">Syrtis</h5>
+        </div> 
+      </div>
+      <div class="col-md-3 card"> 
+        <img src={{ hemi_three.im_url }} class="card-img-top" alt="Valles" style="width: 200px;height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">Valles</h5>
+        </div>
+      </div>
+      </div>
+
+
+      <!-- <div class="row" id="hemi_photos">
         <div class="col-md-3" id="big-photo">
             <img src={{ hemi_zero.im_url }} style="width: 200px;height: 200px;">
             
@@ -49,7 +83,7 @@
         <div class="col-md-3" id="big-photo">
             <img src={{ hemi_three.im_url }} style="width: 200px;height: 200px;">
         </div>
-      </div>
+      </div> -->
       
       
   

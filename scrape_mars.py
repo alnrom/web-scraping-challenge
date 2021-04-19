@@ -63,12 +63,13 @@ def table_facts():
     facts = pd.read_html(url)
 
     table = facts[1]    
-    html_string = table.to_html()  
+    html_string = table.to_html(header=False, index=False)  
+    html_str = html_string.replace('table border="1" class="dataframe"', 'table class="table table-striped table-dark table-hover"')
     
     
     browser.quit()
     
-    return html_string
+    return html_str
 
 # scrapes https://marshemispheres.com/ to find high definition images from Mar's hemispheres
 
